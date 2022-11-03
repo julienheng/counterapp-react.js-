@@ -12,7 +12,7 @@ function App() {
             <button className="btn btn-success mx-3" onClick={() => setCount(count + 1)}>
               Increase
             </button>
-            <button className="btn btn-danger mx-3" onClick={() => setCount(count - 1)}>
+            <button className="btn btn-danger mx-3" onClick={() => setCount(count > 0 ? count - 1 : 0)}>
               Decrease
             </button>
             <button className="btn btn-secondary mx-3" onClick={() => setCount(0)}>
